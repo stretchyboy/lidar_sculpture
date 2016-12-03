@@ -1,0 +1,40 @@
+{
+  "name": "lidar_sculpture",
+  "version": "1.0.0",
+  "description": "Make sculptures from the world",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd src; browserify main.js -o bundle.js -p [ parcelify -o bundle.css ] -t browserify-css",
+    "watch": "cd src; watchify main.js -o bundle.js -p [ parcelify -wo bundle.css ] -t browserify-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduMake/lidar_sculpture.git"
+  },
+  "browserify-css": {
+    "autoInject": true,
+    "minify": true,
+    "rootDir": "."
+  },
+  "author": "Martyn Eggleton",
+  "license": "AGPL-3.0",
+  "style": "*.css",
+  "bugs": {
+    "url": "https://github.com/EduMake/lidar_sculpture/issues"
+  },
+  "homepage": "https://github.com/EduMake/lidar_sculpture#readme",
+  "dependencies": {
+    "beautifymarker": "^1.0.5",
+    "leaflet": "^1.0.2",
+    "leaflet-ajax": "^2.1.0",
+    "leaflet-area-select": "^1.0.2",
+    "leaflet-control-geocoder": "^1.5.4",
+    "leaflet-fullscreen": "^1.0.1",
+    "leaflet-image": "^0.3.0",
+    "leaflet-providers": "^1.1.16"
+  },
+  "devDependencies": {
+    "browserify-css": "^0.9.2"
+  }
+}

@@ -1,0 +1,5 @@
+@import "node_modules/leaflet-fullscreen/dist/leaflet.fullscreen.css";
+@import "node_modules/leaflet-control-geocoder/dist/Control.Geocoder.css";
+
+body { margin:0; padding:0; }
+#mapid { position:absolute; top:0; bottom:0; width:100%; }
